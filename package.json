@@ -12,6 +12,8 @@
     "react-router-dom": "^6.0.2",
     "react-scripts": "4.0.3",
     "react-social-icons": "^5.6.1",
+    "react-vertical-timeline-component": "^3.5.2",
+    "vertical-timeline-component-react": "^2.1.2",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
