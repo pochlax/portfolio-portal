@@ -1,10 +1,14 @@
 export default {
-    name: "project",
-    title: "Project",
+    name: "experience",
+    title: "Experience",
     type: "document",
     fields: [
         {
-            name: "title",
+            name: "company",
+            type: "string"
+        },
+        {
+            name: "position",
             type: "string"
         },
         {
@@ -12,7 +16,7 @@ export default {
             title: 'Slug',
             type: 'slug',
             options: {
-              source: 'title',
+              source: 'company',
               maxLength: 96,
             },
         },
@@ -41,18 +45,6 @@ export default {
         {
             name: "description",
             type: "text"
-        },
-        {
-            name: "projectType",
-            title: "Project type",
-            type: "string",
-            options: {
-                list: [
-                    {value: "personal", title: "Personal"},
-                    {value: "academic", title: "Academic"},
-                    {value: "hackathon", title: "Hackathon"}
-                ]
-            }      
         },
         {
             name: "link",

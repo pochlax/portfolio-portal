@@ -1,8 +1,64 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import image from "../aurora.jpg"
+import sanityClient from "../Client.js";
 
 export default function Skills()
 {
+    const [backEndData, setBackEndData] = useState(null);
+    const [frontEndData, setFrontEndData] = useState(null);
+    const [otherData, setOtherData] = useState(null);
+
+    useEffect(() => {
+        sanityClient
+        .fetch(
+            `*[_type == "technology" && technologyType == "backEnd"]{
+            name,
+            image{
+                asset ->{
+                    _id, 
+                    url
+                },
+                alt
+            },
+            technologyType,
+        }`
+        )
+        .then((data) => setBackEndData(data))
+        .catch(console.error);
+        sanityClient
+        .fetch(
+            `*[_type == "technology" && technologyType == "frontEnd"]{
+            name,
+            image{
+                asset ->{
+                    _id, 
+                    url
+                },
+                alt
+            },
+            technologyType,
+        }`
+        )
+        .then((data) => setFrontEndData(data))
+        .catch(console.error);
+        sanityClient
+        .fetch(
+            `*[_type == "technology" && technologyType == "others"]{
+            name,
+            image{
+                asset ->{
+                    _id, 
+                    url
+                },
+                alt
+            },
+            technologyType,
+        }`
+        )
+        .then((data) => setOtherData(data))
+        .catch(console.error);
+    },[])
+
     return (
         <section className = "pt-20" id = "tech">
             <div className = "max-w-5xl mx-auto text-center justify-center py-12">
@@ -36,28 +92,26 @@ export default function Skills()
                             Back End
                             </p>
                             <div className = "flex grid grid-cols-2">
-                                <div className = "flex flex-col px-2">
-                                    <img src={image} alt = "python" className = "w-52 h-20"></img>
-                                    <h1 className = "pb-2"> Python </h1>
-                                </div>
-                                <div className = "flex flex-col px-2">
-                                    <img src={image} alt = "java" className = "w-52 h-20"></img>
-                                    <h1 className = "pb-2"> Java </h1>
-                                </div>
-                                <div className = "flex flex-col px-2">
-                                    <img src={image} alt = "cpp" className = "w-52 h-20"></img>
-                                    <h1 className = "pb-2"> C++ </h1>
-                                </div>
-                                <div className = "flex flex-col px-2">
-                                    <img src={image} alt = "go" className = "w-52 h-20"></img>
-                                    <h1 className = "pb-2"  > Go </h1>
-                                </div>
+                                {backEndData && backEndData.map((tech, index) => (
+                                    <div className = "flex flex-col px-2">
+                                        <img src={tech.image.asset.url} alt = "python" className = "w-52 h-20"></img>
+                                        <h1 className = "py-2"> {tech.name} </h1>
+                                    </div>
+                                ))}
                             </div>
                         </article>
                         <article className="relative rounded-lg shadow-xl bg-white p-16">
                             <p className = "text-2xl text-center text-gray sm:text-4xl font-semibold pb-3">
                             Front End
                             </p>
+                            <div className = "flex grid grid-cols-2">
+                                {frontEndData && frontEndData.map((tech, index) => (
+                                    <div className = "flex flex-col px-2">
+                                        <img src={tech.image.asset.url} alt = "python" className = "w-52 h-20"></img>
+                                        <h1 className = "py-2"> {tech.name} </h1>
+                                    </div>
+                                ))}
+                            </div>
                         </article>
                         <article className="relative rounded-lg shadow-xl bg-white p-16">
                             <p className = "text-2xl text-center text-gray sm:text-4xl font-semibold pb-3">

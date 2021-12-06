@@ -15,14 +15,14 @@ function App() {
     <main className="text-gray-400 bg-gray-900 body-font">
       <BrowserRouter>
       <NavBar className = "sticky top-0"/>
-        <Routes>
+        {/* <Routes>
           <Route element= {<Home/>} path='/'/>
           <Route element= {<About/>} path='/about'/>
           <Route element= {<Projects/>} path='/project'/>
           <Route element= {<Post/>} path='/posts'/>
           <Route element= {<SinglePost/>} path='/post/:slug'/>
           <Route element = {<Technologies/>} path = '/techStack'> </Route>
-        </Routes>
+        </Routes> */}
       <About2/>
       <Projects2/>
       <Technologies/>
