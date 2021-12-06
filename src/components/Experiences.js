@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-import image from "../aurora.jpg"
-import image2 from "../niagara.jpg"
 import sanityClient from "../Client.js";
    
-   export default function Experience() {
+export default function Experiences() {
     const [experienceData, setExperienceData] = useState(null);
 
     useEffect(() => {
@@ -88,14 +86,4 @@ import sanityClient from "../Client.js";
             </div>
         </section>
     );
-   };
-
-   const customTheme = {
-    yearColor: '#405b73',
-    lineColor: '#d0cdc4',
-    dotColor: '#262626',
-    borderDotColor: '#d0cdc4',
-    titleColor: '#405b73',
-    subtitleColor: '#bf9765',
-    textColor: '#262626',
    };

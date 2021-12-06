@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import image from "../aurora.jpg"
 import sanityClient from "../Client.js";
 
-export default function Skills()
-{
+export default function Technologies() {
     const [backEndData, setBackEndData] = useState(null);
     const [frontEndData, setFrontEndData] = useState(null);
     const [otherData, setOtherData] = useState(null);
