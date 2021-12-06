@@ -67,12 +67,9 @@ export default function Technologies() {
                     </h1>
                     <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
 
-                        These are the projects that I have worked on in the past. Hover over the image to visit the Github Repo.
+                        I am able to create code comfortably in these languages, 
+                        and I am constantly striving to learn cutting-edge technologies to design projects that are scalable, reusable, and robust. 
 
-
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo
-                        facilis repellat ab cupiditate alias vero aliquid obcaecati quisquam
-                        fuga dolore.
                     </p>
                 </div>
                 {/* <div className = "flex flex-wrap justify-center pt-2 w-30">

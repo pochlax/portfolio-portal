@@ -40,13 +40,12 @@ export default function Projects() {
             Past Projects
           </h1>
           <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
+            
+            These are the projects that I have worked on in the past. 
 
-            These are the projects that I have worked on in the past. Hover over the image to visit the Github Repo.
-
-
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo
-            facilis repellat ab cupiditate alias vero aliquid obcaecati quisquam
-            fuga dolore.
+            I worked on these projects to fortify my knowledge whilst learning new languages, and to practice good programming habits.
+            
+            Hover over the project image to visit the Project GitHub Repo!
           </p>
         </div>
         {projectData && projectData.map((project, index) => (

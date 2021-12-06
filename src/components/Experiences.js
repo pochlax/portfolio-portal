@@ -43,12 +43,12 @@ export default function Experiences() {
                     </h1>
                     <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
 
-                        These are the projects that I have worked on in the past. Hover over the image to visit the Github Repo.
+                        Working collaboratively with fellow passionate programmers has allowed us to develop extensive projects, that are more intricate and 
 
+                        tackle increasingly complex problems that wouldn't be possible to do alone. In addition, I enjoy discussing and analyzing varying points of views 
+                        
+                        that comes by working as a team. 
 
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo
-                        facilis repellat ab cupiditate alias vero aliquid obcaecati quisquam
-                        fuga dolore.
                     </p>
                 </div>
 
