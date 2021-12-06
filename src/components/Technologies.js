@@ -88,7 +88,7 @@ export default function Skills()
                 <section className="container mx-auto pt-2">
                     <section className="grid grid-cols-3 gap-3">
                         <article className="relative rounded-lg shadow-xl bg-white p-16">
-                            <p className = "text-2xl text-center text-gray sm:text-4xl font-semibold pb-3">
+                            <p className = "text-2xl text-center text-gray-900 sm:text-4xl font-semibold pb-7">
                             Back End
                             </p>
                             <div className = "flex grid grid-cols-2">
@@ -101,7 +101,7 @@ export default function Skills()
                             </div>
                         </article>
                         <article className="relative rounded-lg shadow-xl bg-white p-16">
-                            <p className = "text-2xl text-center text-gray sm:text-4xl font-semibold pb-3">
+                            <p className = "text-2xl text-center text-gray-900 sm:text-4xl font-semibold pb-7">
                             Front End
                             </p>
                             <div className = "flex grid grid-cols-2">
@@ -114,9 +114,17 @@ export default function Skills()
                             </div>
                         </article>
                         <article className="relative rounded-lg shadow-xl bg-white p-16">
-                            <p className = "text-2xl text-center text-gray sm:text-4xl font-semibold pb-3">
+                            <p className = "text-2xl text-center text-gray-900 sm:text-4xl font-semibold pb-7">
                             Dev Tools
                             </p>
+                            <div className = "flex grid grid-cols-2">
+                                {otherData && otherData.map((tech, index) => (
+                                    <div className = "flex flex-col px-2">
+                                        <img src={tech.image.asset.url} alt = "python" className = "w-52 h-20"></img>
+                                        <h1 className = "py-2"> {tech.name} </h1>
+                                    </div>
+                                ))}
+                            </div>
                         </article>
                     </section>
                 </section>
