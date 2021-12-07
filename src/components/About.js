@@ -1,5 +1,6 @@
 import React from "react";
 import image from "../aurora.jpg"
+import Resume from "../Resume.pdf"
 
 export default function About() {
   return (
@@ -17,7 +18,7 @@ export default function About() {
           </p>
           <div className="flex justify-center">
             <a
-              href="#resume"
+              href={Resume}
               className="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg">
               Get my Resume!
             </a>
