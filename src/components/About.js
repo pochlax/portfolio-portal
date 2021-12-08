@@ -14,7 +14,9 @@ export default function About() {
             Hi! I'm William Suryawidjaja, an undergraduate Student in the University of British Columbia; majoring in Computer Science, and minoring in Data Science. 
             <br className="hidden lg:inline-block" />
             <br className="hidden lg:inline-block" />
-            I am an aspiring full-stack software developer with a passion for learning about new technologies, tackling challenging projects and working in collaborative environments.
+            As a developer, I am curious, collaborative and result-driven. I strive to produce code that is simple, easily scalable and reusable. 
+            Through my experiences of working with numerous fellow developers, I have learnt to become a great communicator and quickly adapt to my work environment. 
+            In my free time, I love to explore new technologies that I can implement to improve the code that I create.
           </p>
           <div className="flex justify-center">
             <a

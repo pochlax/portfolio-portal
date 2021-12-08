@@ -45,7 +45,7 @@ export default function Experiences() {
 
                         Working collaboratively with fellow passionate programmers has allowed us to develop extensive projects, that are more intricate and 
 
-                        tackle increasingly complex problems that wouldn't be possible to do alone. In addition, I enjoy discussing and analyzing varying points of views 
+                        tackle increasingly complex problems that wouldn't be possible to do alone. In addition, I enjoy discussing and analyzing the varying points of views 
                         
                         that comes by working as a team. 
 

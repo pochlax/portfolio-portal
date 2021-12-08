@@ -68,7 +68,7 @@ export default function Technologies() {
                     <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
 
                         I am able to create code comfortably in these languages, 
-                        and I am constantly striving to learn cutting-edge technologies to design projects that are scalable, reusable, and robust. 
+                        and I am constantly striving to learn cutting-edge technologies to design projects that are simple, scalable, reusable and robust. 
 
                     </p>
                 </div>
