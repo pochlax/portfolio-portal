@@ -17,7 +17,7 @@ export default function Hero() {
                                     'a sport enthusiast ⚽ 🏀.',
                                     1000]}/>
                 </div>
-                <div className = "ml-60 text-2xl pb-72 w-96">
+                <div className = "ml-60 text-2xl pb-40 w-96">
                     <h1> I am an aspiring full-stack software developer with a passion for learning about new technologies, tackling challenging projects, and working in collaborative environments. </h1>
                 </div>
             </div>
