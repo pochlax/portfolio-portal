@@ -73,8 +73,8 @@ export default function Experiences() {
                                     {experience.description}
                                     </p>
                                 </div>
-                                <div className = "flex-1 w-1/3">
-                                    <img className = "ml-auto m-4 object-right w-100 h-44"
+                                <div className = "flex-1 w-1/3 ml-5">
+                                    <img className = "ml-auto m-4 object-right w-100 h-40"
                                         alt="gallery"
                                         src={experience.image.asset.url}
                                     />
