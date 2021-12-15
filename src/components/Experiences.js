@@ -65,7 +65,7 @@ export default function Experiences() {
                             // icon={<WorkIcon />}
                         >
                             <div className = "flex grid-col-2">
-                                <div className = "flex flex-col mt-4 ml-5">
+                                <div className = "flex flex-col mt-4 ml-5 w-2/3">
                                     <h3 className="vertical-timeline-element-title text-left text-green-400 text-2xl font-semibold">{experience.company}</h3>
                                     <h4 className="vertical-timeline-element-subtitle text-left">{experience.position}</h4>
                                     <h4 className="vertical-timeline-element-subtitle text-left">{experience.place}</h4>
@@ -73,7 +73,7 @@ export default function Experiences() {
                                     {experience.description}
                                     </p>
                                 </div>
-                                <div className = "flex-1">
+                                <div className = "flex-1 w-1/3">
                                     <img className = "ml-auto m-4 object-right w-100 h-44"
                                         alt="gallery"
                                         src={experience.image.asset.url}
